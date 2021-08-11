@@ -1,0 +1,57 @@
+/* ajout police de caractere Raleway*/
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url('Raleway/Raleway-VariableFont_wght.ttf') format('truetype'), 
+    url('Raleway/Raleway-Italic-VariableFont_wght.ttf') format ('truetype');
+}
+body
+{
+    font-family: 'Raleway', sans-serif;
+    width: 1024px;
+    margin: auto;
+}
+/* En-tête du site */
+.logo
+{
+    width: 100px;
+    height: 50px;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red; /*juste pour visualiser*/
+}
+nav a
+{
+    text-decoration: none;
+    border: 1px solid orange; /*juste pour visualiser*/
+}
+nav ul
+{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    border: 1px solid black;/*juste pour visualiser*/
+}
+nav li
+{
+    display: flex;
+    border: 1px solid greenyellow;/*juste pour visualiser*/
+    padding-right: 40px;
+    align-items: center;
+}
+nav li:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC; /* Sélection au top de nav sur du survol de la souris*/
+}
+.hebergement, .activites
+{
+    color: black;
+}
+.inscription
+{
+    color: #0065FC;
+    font-weight: bold;
+}
