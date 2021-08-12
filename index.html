@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!--La police d'écriture est récupéré directement depuis google font-->
     <script src="https://kit.fontawesome.com/5fe12271fc.js" crossorigin="anonymous"></script> <!--Les icones sont récupérés directement depuis font awesome -->
     <title>Reservia</title>
 </head>
@@ -13,35 +16,35 @@
             <nav>
                 <p><a href="index.html"><img src="images/logo/Reservia@3x.png" alt="logo reservia" class="logo"></a></p>
                 <ul>
-                    <li class="hebergement"><a href="index.html">Hébergement</a></li>
-                    <li class="activites"><a href="index2.html">Activités</a></li>
-                    <li class="inscription"><a href="#">S'inscrire</a></li>
+                    <li><a href="index.html" class="hebergement">Hébergements</a></li>
+                    <li><a href="index2.html" class="activites">Activités</a></li>
+                    <li><a href="#" class="inscription">S'inscrire</a></li>
                 </ul>
             </nav>
         </header>
         <section><!--1ère section: section-->
-            <h1>Trouvez votre hébergements pours des vacances de rêve</h1>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <form method="post" action="traitement.php">
+            <form method="post" action="traitement.php" class="recherche">
                 <i class="fas fa-map-marker-alt"></i>
-                <input type="text" name="location" placeholder="Marseille, France"/>
-                <input type="submit" value="Rechercher"/>
+                <input type="text" name="location" placeholder="Marseille, France" class="texte"/>
+                <input type="submit" value="Rechercher" class="rechercher"/>
             </form>
-            <div>
+            <div id="conteneur_filtre">
                 <p>Filtres</p>
                 <ul>
-                    <li><a href="#">Économie</a></li>
-                    <li><a href="#">Familial</a></li>
-                    <li><a href="#">Romantique</a></li>
-                    <li><a href="#">Animaux autorisé</a></li>
+                    <li><a href="#"><i class="fas fa-money-bill-wave"></i>Économie</a></li>
+                    <li><a href="#"><i class="fas fa-child"></i>Familial</a></li>
+                    <li><a href="#"><i class="fas fa-heart"></i>Romantique</a></li>
+                    <li><a href="#"><i class="fas fa-dog"></i>Animaux autorisés</a></li>
                 </ul>
             </div>
-            <p><i class="fas fa-info"></i>Plus de 500 logement sont disponibles dans cette ville</p>
+            <p id="phrase_info"><i class="fas fa-info"></i>Plus de 500 logement sont disponibles dans cette ville</p>
         </section>
-        <div> <!--corps haut-->
+        <div id="corps"> <!--corps haut-->
             <section><!--contenu corps à gauche-->
-                <h3>Hébergments à Marseille</h3>
-                <ul>
+                <h3>Hébergements à Marseille</h3>
+                <ul id="corps_gauche">
                     <li><a href="#">
                             <figure>
                                 <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo Auberge la Cannebière">

@@ -1,20 +1,16 @@
-/* ajout police de caractere Raleway*/
-@font-face {
-    font-family: 'Raleway', sans-serif;
-    src: url('Raleway/Raleway-VariableFont_wght.ttf') format('truetype'), 
-    url('Raleway/Raleway-Italic-VariableFont_wght.ttf') format ('truetype');
-}
 body
 {
     font-family: 'Raleway', sans-serif;
     width: 1024px;
+    padding-top: 0px;
+    margin-top: 0px;
     margin: auto;
 }
 /* En-tête du site */
 .logo
 {
-    width: 100px;
-    height: 50px;
+    width: 95px;
+    height: 45px;
 }
 nav
 {
@@ -25,7 +21,9 @@ nav
 nav a
 {
     text-decoration: none;
-    border: 1px solid orange; /*juste pour visualiser*/
+    margin: auto;
+    color: black;
+    font-size: 1em;
 }
 nav ul
 {
@@ -33,25 +31,184 @@ nav ul
     justify-content: center;
     list-style-type: none;
     border: 1px solid black;/*juste pour visualiser*/
+    margin-top: 0;
+    margin-bottom: 0;
 }
 nav li
 {
     display: flex;
     border: 1px solid greenyellow;/*juste pour visualiser*/
     padding-right: 40px;
-    align-items: center;
+    padding-left: 40px;
+    margin-top: 0px;
 }
 nav li:hover
 {
     color: #0065FC;
     border-top: 2px solid #0065FC; /* Sélection au top de nav sur du survol de la souris*/
 }
-.hebergement, .activites
-{
-    color: black;
-}
 .inscription
 {
+    font-size: 1em;
     color: #0065FC;
     font-weight: bold;
+}
+/*section haut du corps*/
+section h1
+{
+    font-size: 1.2em;
+    margin: 5px 0px 0px 10px;
+    padding: 0px 0px 0px 0px;
+}
+section p
+{
+    font-size: 0.8em;
+    margin: 2px 0px 10px 10px;
+}
+.recherche
+{
+    display: flex;
+    border-radius: 10px;
+    margin: 0px 0px 10px 10px;
+}
+.fa-map-marker-alt
+{
+    padding: 10px 10px 10px 10px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    border-color: #F2F2F2;
+}
+.texte
+{
+    font-family: 'Raleway', sans-serif;
+    padding: 0px 50px 0px 10px;
+    border-color: #F2F2F2;
+    border-style: solid; 
+}
+.texte::placeholder 
+{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+.rechercher
+{
+    padding: 10px 15px 10px 15px;
+    color: #DEEBFF;
+    background-color: #0065FC;
+    border-radius: 0px 10px 10px 0;
+    font-weight: bold;
+    border-color: #F2F2F2;
+    border: none;
+}
+#conteneur_filtre
+{
+    display: flex;
+}
+#conteneur_filtre p
+{
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#conteneur_filtre ul
+{
+    display: flex;
+    padding-left: 20px ;
+
+}
+#conteneur_filtre ul li
+{
+    display: flex;
+    border: 1px solid #F2F2F2;
+    border-radius: 18px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+#conteneur_filtre ul li a
+{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    padding-right: 20px;
+}
+#conteneur_filtre ul li a i
+{
+    border: 1px solid #F2F2F2;
+    padding: 10px 10px 10px 10px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 18px;
+    margin-right: 8px;
+}
+#phrase_info i
+{
+    border: 1px solid #F2F2F2;
+    padding: 4px 8px 4px 8px;
+    color: #0065FC;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+#phrase_info
+{
+    font-size: 0.8em;
+}
+/*Corps de gauche*/
+#corps
+{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
+}
+#corps h3
+{
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+#corps h4
+{
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 10px;
+}
+#corps p
+{
+    font-size: 0.7em;
+    margin-bottom: 2px;
+}
+#corps a
+{
+    text-decoration: none;
+    color: black;
+}
+#corps_gauche
+{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    width: 650px;
+    padding: 3px 3px 3px 3px
+}
+#corps_gauche li
+{
+    display: flex;
+    list-style-type: none;
+    border: 1px dotted green;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0;
+    margin-right: 10px;
+}
+#corps_gauche img
+{
+    border-radius: 10px 10px 0px 0px;
+    width: 135px;
+    height: 100px;
 }
