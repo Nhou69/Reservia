@@ -1,6 +1,5 @@
 body {
     font-family: 'Raleway', sans-serif;
-    /* width: 1024px; */
     padding-top: 0px;
     margin-top: 0px;
     margin: auto;
@@ -202,7 +201,7 @@ aside {
 #corps h3 {
     font-size: 1.2em;
     font-weight: bold;
-    margin-left: 30px;
+    margin: 20px 0px 8px 30px;
 }
 
 #corps h4 {
@@ -230,20 +229,21 @@ aside {
     justify-content: space-around;
     align-content: center;
     width: auto;
-    padding: 15px 10px 15px 10px
+    padding: 15px 10px 15px 10px;
+    margin: 0;
 }
 
 #corps_gauche li {
     display: flex;
     list-style-type: none;
     background-color: white;
-    width: 240px;
+    width: auto;
     box-shadow: 1px 1px 5px rgb(212, 212, 212);
     border-radius: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 #corps_gauche figure {
-    width: 100%;
+    width: auto;
     margin: 5px 5px 5px 5px;
 }
 #corps_gauche img {
@@ -273,17 +273,12 @@ aside.plus-populaires {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    padding: 10px 20px 0 20px;
+    margin: 20px 20px 0 20px;
 }
 
 #corps header h3 {
     margin: 0;
     padding: 0;
-}
-#corps_droite figcaption p {
-    font-size: 0.9em;
-    margin-bottom: 2px;
 }
 
 #corps header i {
@@ -299,13 +294,17 @@ ul#corps_droite {
 }
 
 #corps_droite p {
-    font-size: 0.7em;
+    font-size: 0.9em;
     margin: 5px 0px 0px 10px;
 }
 
+#corps_droite figure figcaption p:nth-child(2) {
+    margin-bottom: auto;
+}
 #corps_droite img {
     border-radius: 10px 0px 0px 10px;
     width: 110px;
+    min-width: 110px;
     height: 130px;
 }
 
@@ -317,7 +316,7 @@ ul#corps_droite {
     box-shadow: 1px 1px 5px rgb(212, 212, 212);
     margin-top: 8px;
     margin-bottom: 10px;
-    width: 100%;
+    width: auto;
     height: 140px;
 }
 
@@ -336,9 +335,7 @@ ul#corps_droite {
     padding: 5px 0;
 }
 
-#corps_droite figure figcaption p:nth-child(2) {
-    margin-bottom: auto;
-}
+
 
 /*bas du corps => fait avec css grid*/
 
