@@ -105,15 +105,53 @@ section p {
 }
 .rechercher {
     padding: 10px 15px 10px 15px;
+    margin-left: -8px;
     color: white;
     background-color: #0065FC;
-    border-radius: 0px 10px 10px 0;
+    border-radius: 0 10px 10px 0;
     font-weight: bold;
     border-color: #F2F2F2;
     border: none;
 }
 .rechercher:hover {
     background-color: blue;
+}
+.recherche_ville .logo_loupe
+{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: auto;
+    height: auto;
+    margin: 0 0 0 -5px;
+    padding: 0;
+    border-radius: 10px;
+    border: none
+}
+.recherche_ville .logo_loupe p
+{
+    appearance: none;
+    justify-content: center;
+    align-items: center ;
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+#logo_loupe
+{
+    display: none;
+}
+.loupe
+{
+    color: white;
+    background-color: #0065FC;
+    padding: 12px 15px 12px 15px;
+    font-size: 1.6em;
+    border-radius: 10px;
+    border: none;
 }
 #conteneur_filtre {
     display: flex;
@@ -621,6 +659,10 @@ footer a:hover {
     {
         padding: 0 !important;
     }
+    nav ul .logo
+    {
+        justify-content: flex-start;
+    }
     nav ul {
         display: grid;
         grid-template-columns: 1fr, 1fr, 1fr 1fr;
@@ -657,6 +699,14 @@ footer a:hover {
         border-bottom: 2px solid #0065FC !important;
         border-top: none;
         /* Sélection au top de nav sur du survol de la souris*/
+    }
+    #logo_loupe
+    {
+        display: initial;
+    }
+    .rechercher
+    {
+        display: none;
     }
     #corps_gauche
     {
