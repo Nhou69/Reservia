@@ -24,20 +24,19 @@ body img {
 }
 /* En-tête du site */
 
-.logo {
+.logoR {
     width: 95px;
     height: 45px;
 }
-
 nav ul li .liste{
     display: flex;
     text-decoration: none;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 30px 0px 30px;
     align-items: center;
     color: black;
-    font-size: 1.1em;
+    font-size: 1em;
+    height: 50px;
 }
-
 nav li:nth-child(1)
 {
     flex: 1;
@@ -47,6 +46,7 @@ nav ul {
     justify-content: flex-end;
     list-style-type: none;
     width: 100%;
+    margin-top: 0;
     padding: 0;
 }
 
@@ -55,13 +55,13 @@ nav li {
     margin-top: 0px;
 }
 
-nav ul .ligne_haut:hover {
-    border-top: 2px solid #0065FC !important;
+nav ul .ligne_haut:hover , .ligne_hautbas:hover{
+    border-top: 2px solid #0065FC;
     /* Sélection au top de nav sur du survol de la souris*/
 }
 
 nav a:hover {
-    color: #0065FC;
+    color: #0065FC !important;
 }
 
 .inscription{
@@ -609,16 +609,54 @@ footer a:hover {
 @media screen and (max-width: 655px)
 {
     nav{
-        border: 1px solid green;
-        width: auto;
+        height: 100%;
+    }
+    nav a
+    {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    nav ul .inscription
+    {
+        padding: 0 !important;
     }
     nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        border: 1px solid red;
-        margin: 0;
-        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr 1fr;
+        grid-row: 1fr 1fr;
+        justify-content: stretch;
+        width: auto;
+    }
+    nav ul li{
+        justify-content: center;
+        width: 100%;
+    }
+    nav ul li:nth-child(1)
+    {
+        grid-column: 1/ span 1;
+        grid-row: 1/ span 1;
+    }
+    nav ul li:nth-child(2)
+    {
+        grid-column: 1/ span 2;
+        grid-row: 2/ span 1;
+    }
+    nav ul li:nth-child(3)
+    {
+        grid-column: 3/ span 2;
+        grid-row: 2/ span 1;
+    }
+    nav ul li:nth-child(4)
+    {
+        grid-column: 4/ span 1;
+        grid-row: 1/ span 1;
+    }
+
+    nav ul .ligne_hautbas:hover{
+        border-bottom: 2px solid #0065FC !important;
+        border-top: none;
+        /* Sélection au top de nav sur du survol de la souris*/
     }
     #corps_gauche
     {
