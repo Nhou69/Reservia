@@ -22,8 +22,6 @@ body img {
 .empty {
     color: #ccc;
 }
-
-
 /* En-tête du site */
 
 .logo {
@@ -31,30 +29,25 @@ body img {
     height: 45px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-nav a {
+nav ul li .liste{
     display: flex;
     text-decoration: none;
     padding: 0px 40px 0px 40px;
     align-items: center;
     color: black;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
-nav p a {
-    padding-left: 0;
+nav li:nth-child(1)
+{
+    flex: 1;
 }
-
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     list-style-type: none;
-    margin-top: 0;
-    margin-bottom: 0;
+    width: 100%;
+    padding: 0;
 }
 
 nav li {
@@ -62,8 +55,8 @@ nav li {
     margin-top: 0px;
 }
 
-nav li:hover {
-    border-top: 2px solid #0065FC;
+nav ul .ligne_haut:hover {
+    border-top: 2px solid #0065FC !important;
     /* Sélection au top de nav sur du survol de la souris*/
 }
 
@@ -71,20 +64,19 @@ nav a:hover {
     color: #0065FC;
 }
 
-.inscription {
-    font-size: 1em;
-    color: #0065FC;
+.inscription{
+    color: #0065FC !important;
     font-weight: bold;
 }
 /*section haut du corps*/
 section h1 {
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 700;
     margin: 5px 0px 0px 10px;
     padding: 0px 0px 0px 0px;
 }
 section p {
-    font-size: 0.9em;
+    font-size: 0.95em;
     margin: 2px 0px 10px 10px;
 }
 .recherche {
@@ -616,10 +608,17 @@ footer a:hover {
 }
 @media screen and (max-width: 655px)
 {
+    nav{
+        border: 1px solid green;
+        width: auto;
+    }
     nav ul {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column-reverse;
+        border: 1px solid red;
+        margin: 0;
+        padding: 0;
     }
     #corps_gauche
     {
@@ -641,7 +640,7 @@ footer a:hover {
     }
     #corps section {
         background-color: white;
-}
+    }
     #corps_bas ul
     {
         display: flex;
