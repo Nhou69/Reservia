@@ -24,7 +24,7 @@ body img {
 }
 /* En-tête du site */
 
-.logoR {
+.logo {
     width: 95px;
     height: 45px;
 }
@@ -53,6 +53,7 @@ nav ul {
 nav li {
     display: flex;
     margin-top: 0px;
+    border-top: 2px solid transparent;
 }
 
 nav ul .ligne_haut:hover , .ligne_hautbas:hover{
@@ -113,7 +114,7 @@ section p {
     border-color: #F2F2F2;
     border: none;
 }
-.rechercher:hover {
+.rechercher:hover , .loupe:hover{
     background-color: blue;
 }
 .recherche_ville .logo_loupe
@@ -123,7 +124,7 @@ section p {
     align-items: center ;
     width: auto;
     height: auto;
-    margin: 0 0 0 -5px;
+    margin: 0 0 0 -8px;
     padding: 0;
     border-radius: 10px;
     border: none
@@ -658,21 +659,20 @@ footer a:hover {
     nav ul .inscription
     {
         padding: 0 !important;
+        width: 120px;
     }
     nav ul .logo
     {
         justify-content: flex-start;
+        margin-left: 15px;
     }
     nav ul {
         display: grid;
-        grid-template-columns: 1fr, 1fr, 1fr 1fr;
+        grid-template-columns: 1fr, 1fr;
         grid-row: 1fr 1fr;
         justify-content: stretch;
+        align-items: center;
         width: auto;
-    }
-    nav ul li{
-        justify-content: center;
-        width: 100%;
     }
     nav ul li:nth-child(1)
     {
@@ -683,22 +683,28 @@ footer a:hover {
     {
         grid-column: 1/ span 2;
         grid-row: 2/ span 1;
+        width: 50%;
     }
     nav ul li:nth-child(3)
     {
-        grid-column: 3/ span 2;
+        grid-column: 2/ span 1;
         grid-row: 2/ span 1;
     }
     nav ul li:nth-child(4)
     {
-        grid-column: 4/ span 1;
+        grid-column: 2/ span 1;
         grid-row: 1/ span 1;
+        justify-self: end;
     }
 
     nav ul .ligne_hautbas:hover{
         border-bottom: 2px solid #0065FC !important;
         border-top: none;
-        /* Sélection au top de nav sur du survol de la souris*/
+    }
+    nav ul .ligne_hautbas{
+        border-bottom: 2px solid #ccc;
+        border-top: none;
+        justify-content: center;
     }
     #logo_loupe
     {
