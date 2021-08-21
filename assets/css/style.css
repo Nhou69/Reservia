@@ -65,6 +65,7 @@ nav a:hover {
     color: #0065FC !important;
 }
 
+
 .inscription{
     color: #0065FC !important;
     font-weight: bold;
@@ -177,11 +178,13 @@ section p {
     text-decoration: none;
     margin-right: 20px;
 }
-
 #conteneur_filtre li:hover {
     background-color: #DEEBFF;
 }
 
+#conteneur_filtre li:hover i{
+    background-color: white;
+}
 #conteneur_filtre ul li a {
     text-decoration: none;
     font-size: 1em;
@@ -277,6 +280,12 @@ aside {
     border-radius: 15px;
     margin-bottom: 20px;
 }
+
+#corps_gauche li:hover {
+    transform: scale(1.03);
+    transition: ease 0.4s;
+}
+
 #corps_gauche figure {
     width: auto;
     margin: 5px 5px 5px 5px;
@@ -354,6 +363,10 @@ ul#corps_droite {
     width: 100%;
     height: auto;
 }
+#corps_droite li:hover {  
+    transform: scale(1.03);
+    transition: ease 0.4s;
+}
 
 #corps_droite figure {
     display: flex;
@@ -393,6 +406,10 @@ ul#corps_droite {
     border-radius: 15px;
     margin: 0;
     padding: 0;
+}
+#corps_bas li:hover {
+    transform: scale(1.03);
+    transition: ease 0.4s;
 }
 
 #corps_bas a {
