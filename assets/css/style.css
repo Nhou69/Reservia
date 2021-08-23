@@ -6,7 +6,7 @@ body {
 }
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto 10px auto 20px;
 }
 
 body img {
@@ -74,7 +74,7 @@ nav a:hover {
 section h1 {
     font-size: 1.4em;
     font-weight: 700;
-    margin: 5px 0px 0px 10px;
+    margin: 30px 0px 10px 10px;
     padding: 0px 0px 0px 0px;
 }
 section p {
@@ -86,13 +86,12 @@ section p {
     font-weight: 700;
     display: flex;
     border-radius: 10px;
-    margin: 0px 0px 10px 10px;
+    margin: 25px 0px 10px 10px;
 }
 .fa-map-marker-alt {
     padding: 12px 14px 12px 14px;
     background-color: #F2F2F2;
     border-radius: 10px 0px 0px 10px;
-    border-color: #F2F2F2;
 }
 .texte {
     font-family: 'Raleway', sans-serif;
@@ -130,18 +129,6 @@ section p {
     border-radius: 10px;
     border: none
 }
-.recherche_ville .logo_loupe p
-{
-    appearance: none;
-    justify-content: center;
-    align-items: center ;
-    display: flex;
-    width: auto;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    border-radius: 10px;
-}
 #logo_loupe
 {
     display: none;
@@ -157,6 +144,7 @@ section p {
 }
 #conteneur_filtre {
     display: flex;
+    margin-top: 20px;
 }
 #conteneur_filtre p {
     font-size: 1.1em;
@@ -213,6 +201,7 @@ section p {
 
 #phrase_info {
     font-size: 0.9em;
+    margin-bottom: 25px;
 }
 
 
@@ -384,7 +373,13 @@ ul#corps_droite {
 }
 
 /*bas du corps => fait avec css grid*/
-
+#corps_bas
+{
+    margin: 0 5px 20px 10px;
+}
+#corps_bas h3{
+    margin: 35px 0 18px 10px;
+}
 #corps_bas img {
     border-radius: 15px 15px 0px 0px;
 }
@@ -493,11 +488,12 @@ ul#corps_droite {
     grid-row: 3 / span 2;
 }
 
-
 /*pied de page*/
 
 footer {
     background-color: #F2F2F2;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 footer .container {
@@ -584,17 +580,15 @@ footer a:hover {
     #corps_gauche img {
         width: 250px;
     }
-
     #corps_bas
     {
-        margin-bottom: 20px;
+        margin-bottom: 50px !important;
     }
 
     #corps_bas img{
         border-radius: 15px 15px 0px 0px;
         width: 100% !important;
         height: 150px !important;
-
     }
     #corps_bas ul {
         display: grid;
@@ -685,8 +679,8 @@ footer a:hover {
     }
     nav ul {
         display: grid;
-        grid-template-columns: 1fr, 1fr;
-        grid-row: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         justify-content: stretch;
         align-items: center;
         width: auto;
