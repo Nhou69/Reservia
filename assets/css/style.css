@@ -6,7 +6,7 @@ body {
 }
 .container {
     max-width: 1200px;
-    margin: auto 10px auto 20px;
+    margin: 0 auto;
 }
 
 body img {
@@ -213,6 +213,7 @@ section.hebergements-marseille {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 15px;
 }
 
 #corps section,
@@ -375,7 +376,7 @@ ul#corps_droite {
 /*bas du corps => fait avec css grid*/
 #corps_bas
 {
-    margin: 0 5px 20px 10px;
+    margin: 0 15px 20px 15px;
 }
 #corps_bas h3{
     margin: 35px 0 18px 10px;
