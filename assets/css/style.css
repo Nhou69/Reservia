@@ -744,6 +744,10 @@ footer a:hover {
         width: 100%;
         height: 120px;
     }
+    #corps_droite img
+    {
+        max-width: 110px;
+    }
     #corps section {
         background-color: white;
     }
