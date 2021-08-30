@@ -206,7 +206,7 @@ section p {
 
 
 /*Corps de gauche*/
-section.hebergements-marseille {
+section #hebergements-marseille {
     width: 68%;
 }
 #corps {
